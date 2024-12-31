@@ -1,5 +1,6 @@
 "use client";
 
+import { Menu } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -38,10 +39,36 @@ const Navbar = () => {
             </div>
           </div>
           <div className="md:hidden">
-            <button></button>
+            <button onClick={() => setIsOpen(!isOpen)} className="">
+              <Menu className="h-6 w-6" />
+            </button>
           </div>
         </div>
       </div>
+      {isOpen && (
+        <div className="md:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <Link
+              href="#how-it-works"
+              className="text-foreground/60 hover:text-foreground block px-3 py-2 rounded-md text-base font-medium"
+            >
+              How It Works
+            </Link>
+            <Link
+              href="#features"
+              className="text-foreground/60 hover:text-foreground block px-3 py-2 rounded-md text-base font-medium"
+            >
+              Features
+            </Link>
+            <Link
+              href="#company"
+              className="text-foreground/60 hover:text-foreground block px-3 py-2 rounded-md text-base font-medium"
+            >
+              Company
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
