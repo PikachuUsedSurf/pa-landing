@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import GrainBackground from "./components/ui/grain-background";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "AssistantHire - Find Your Perfect Personal Assistant",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.className} bg-black`}>
+      <body className={` bg-black`}>
         <GrainBackground />
         {children}
       </body>

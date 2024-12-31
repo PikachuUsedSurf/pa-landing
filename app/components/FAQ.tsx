@@ -53,9 +53,9 @@ const FAQ = ({ id }: { id?: string }) => {
   return (
     <section
       id={id}
-      className="py-24 bg-gradient-to-b from-indigo-950/50 to-background"
+      className="py-24 items-center bg-gradient-to-b from-indigo-950/50 to-background"
     >
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 ">
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl">
             Frequently Asked Questions

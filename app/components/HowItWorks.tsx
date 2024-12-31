@@ -20,7 +20,7 @@ const steps = [
     number: "3",
     title: "Get Matched",
     description:
-      "Our AI system matches you with the most compatible candidates.",
+      "Our Inteligent system matches you with the most compatible candidates.",
   },
   {
     number: "4",
@@ -32,7 +32,7 @@ const steps = [
 const HowItWorks = ({ id }: { id?: string }) => {
   return (
     <section id={id} className="py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-6 mx-auto">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -54,7 +54,7 @@ const HowItWorks = ({ id }: { id?: string }) => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl">
-                How AssistantHire works?
+                How Personal Assistance works?
               </h2>
               <p className="text-zinc-400 md:text-xl/relaxed">
                 Our streamlined process makes finding the perfect assistant

@@ -23,7 +23,7 @@ const CTA = ({ id }: { id?: string }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (step < 3) {
+    if (step < 4) {
       setStep(step + 1);
     } else {
       console.log("Submitted email:", email);
@@ -50,7 +50,8 @@ const CTA = ({ id }: { id?: string }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Join our waitlist to be notified when we launch!
+          Join our waitlist to be notified when we launch! <br /> Be the first
+          few to claim your lifetime deal below!
         </motion.p>
         <Drawer open={isOpen} onOpenChange={setIsOpen}>
           <DrawerTrigger asChild>
@@ -59,7 +60,7 @@ const CTA = ({ id }: { id?: string }) => {
               size="lg"
               className="bg-zinc-950 border-zinc-800 hover:bg-zinc-900"
             >
-              Join Waitlist
+              Join Waitlist & Claim Lifetime Deal!
             </Button>
           </DrawerTrigger>
           <DrawerContent className="bg-zinc-950 border-zinc-800">
@@ -153,6 +154,62 @@ const CTA = ({ id }: { id?: string }) => {
                     className="space-y-4"
                   >
                     <h3 className="text-lg font-semibold">
+                      How did you find our service?
+                    </h3>
+                    <div className="space-y-4">
+                      <Label className=" flex items-center space-x-2">
+                        <Input
+                          type="radio"
+                          id="social"
+                          name="social-media"
+                          className="w-4 h-4"
+                        />
+                        <span>Social Media</span>
+                      </Label>
+                    </div>
+                    <div className="space-y-4">
+                      <Label className=" flex items-center space-x-2">
+                        <Input
+                          type="radio"
+                          id="family-friend"
+                          name="family-friend"
+                          className="w-4 h-4"
+                        />
+                        <span>Friends or Family</span>
+                      </Label>
+                    </div>
+                    <div className="space-y-4">
+                      <Label className=" flex items-center space-x-2">
+                        <Input
+                          type="radio"
+                          id="work"
+                          name="work"
+                          className="w-4 h-4"
+                        />
+                        <span>Work</span>
+                      </Label>
+                    </div>
+                    <div className="space-y-4">
+                      <Label className=" flex items-center space-x-2">
+                        <Input
+                          type="radio"
+                          id="advert"
+                          name="ads"
+                          className="w-4 h-4"
+                        />
+                        <span>Online Advertisement</span>
+                      </Label>
+                    </div>
+                  </motion.div>
+                )}
+                {step === 4 && (
+                  <motion.div
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -20 }}
+                    className="space-y-4"
+                  >
+                    <h3 className="text-lg font-semibold">
                       Enter your email to join our waitlist
                     </h3>
                     <Input
@@ -161,7 +218,7 @@ const CTA = ({ id }: { id?: string }) => {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
-                      className="w-full bg-zinc-900 border-zinc-800"
+                      className="w-96 bg-zinc-900 border-zinc-800"
                     />
                   </motion.div>
                 )}
@@ -169,9 +226,9 @@ const CTA = ({ id }: { id?: string }) => {
               <DrawerFooter>
                 <Button
                   type="submit"
-                  className="w-full bg-zinc-900 hover:bg-zinc-800"
+                  className="w-full bg-white hover:bg-zinc-800"
                 >
-                  {step < 3 ? "Next" : "Submit"}
+                  {step < 4 ? "Next" : "Submit"}
                 </Button>
                 <DrawerClose asChild>
                   <Button variant="outline" className="w-full border-zinc-800">
