@@ -19,12 +19,12 @@ const Header = () => {
     <header className="min-h-screen">
       <div className="grid lg:grid-cols-2 min-h-screen">
         <div className="relative hidden lg:block">
-          <div className="absolute inset-0 bg-blue-950">
+          <div className="absolute inset-0 bg-blue-800">
             <Image
-              src="/placeholder.svg"
+              src="/header-image.jpg"
               alt="Professional workspace"
               fill
-              className="object-cover opacity-80 mix-blend-overlay"
+              className="object-cover opacity-80"
             />
           </div>
         </div>
@@ -56,7 +56,7 @@ const Header = () => {
                   className="bg-white/5 border-white/10 text-white placeholder:text-zinc-400"
                 /> */}
                 <Button className="bg-indigo-600 hover:bg-indigo-700 text-white">
-                  <Link href="#cta">Claim Your Life Time Deal!</Link>
+                  <Link href="#cta"> Claim Life Time Deal!</Link>
                 </Button>
               </div>
             </motion.div>

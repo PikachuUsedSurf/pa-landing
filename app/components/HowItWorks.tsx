@@ -44,10 +44,10 @@ const HowItWorks = ({ id }: { id?: string }) => {
             <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 to-blue-700 rounded-2xl overflow-hidden">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.1),transparent)] animate-pulse" />
               <Image
-                src="/placeholder.svg"
+                src="/BW (1).jpg"
                 alt="How it works illustration"
                 fill
-                className="object-cover mix-blend-overlay opacity-50"
+                className="object-cover opacity-80"
               />
             </div>
           </motion.div>
