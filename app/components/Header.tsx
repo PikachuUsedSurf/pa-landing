@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -43,19 +44,19 @@ const Header = () => {
               </h1>
               <p className="text-lg text-zinc-400 max-w-lg">
                 Connect with pre-vetted personal assistants who match your needs
-                perfectly. Our AI-powered platform makes finding the right
-                assistant easier than ever.
+                perfectly. Our platform makes finding the right assistant easier
+                than ever.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 max-w-md">
-                <Input
+                {/* <Input
                   type="email"
                   placeholder="Enter email to get started"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="bg-white/5 border-white/10 text-white placeholder:text-zinc-400"
-                />
+                /> */}
                 <Button className="bg-indigo-600 hover:bg-indigo-700 text-white">
-                  Start your 7 days trial
+                  <Link href="#cta">Claim Your Life Time Deal!</Link>
                 </Button>
               </div>
             </motion.div>

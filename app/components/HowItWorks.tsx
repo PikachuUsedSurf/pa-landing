@@ -54,7 +54,7 @@ const HowItWorks = ({ id }: { id?: string }) => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl">
-                How AssistantHire works?
+                How Personal Assistance works?
               </h2>
               <p className="text-zinc-400 md:text-xl/relaxed">
                 Our streamlined process makes finding the perfect assistant

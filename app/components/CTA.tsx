@@ -52,6 +52,14 @@ const CTA = ({ id }: { id?: string }) => {
         >
           Join our waitlist to be notified when we launch!
         </motion.p>
+        <motion.p
+          className="text-xl mb-8 text-zinc-400"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          Claim your lifetime deal below
+        </motion.p>
         <Drawer open={isOpen} onOpenChange={setIsOpen}>
           <DrawerTrigger asChild>
             <Button
@@ -59,7 +67,7 @@ const CTA = ({ id }: { id?: string }) => {
               size="lg"
               className="bg-zinc-950 border-zinc-800 hover:bg-zinc-900"
             >
-              Join Waitlist
+              Join Waitlist & Claim Lifetime Deal!
             </Button>
           </DrawerTrigger>
           <DrawerContent className="bg-zinc-950 border-zinc-800">
@@ -161,7 +169,7 @@ const CTA = ({ id }: { id?: string }) => {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
-                      className="w-full bg-zinc-900 border-zinc-800"
+                      className="w-96 bg-zinc-900 border-zinc-800"
                     />
                   </motion.div>
                 )}
