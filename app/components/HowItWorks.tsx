@@ -20,7 +20,7 @@ const steps = [
     number: "3",
     title: "Get Matched",
     description:
-      "Our AI system matches you with the most compatible candidates.",
+      "Our Inteligent system matches you with the most compatible candidates.",
   },
   {
     number: "4",
@@ -32,7 +32,7 @@ const steps = [
 const HowItWorks = ({ id }: { id?: string }) => {
   return (
     <section id={id} className="py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-6 mx-auto">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -44,10 +44,10 @@ const HowItWorks = ({ id }: { id?: string }) => {
             <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 to-blue-700 rounded-2xl overflow-hidden">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.1),transparent)] animate-pulse" />
               <Image
-                src="/placeholder.svg"
+                src="/BW (1).jpg"
                 alt="How it works illustration"
                 fill
-                className="object-cover mix-blend-overlay opacity-50"
+                className="object-cover opacity-80"
               />
             </div>
           </motion.div>
