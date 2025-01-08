@@ -51,6 +51,7 @@ const CTA = ({ id }: { id?: string }) => {
     const snapshot = await get(emailQuery);
     return snapshot.exists();
   };
+  
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
