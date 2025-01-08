@@ -19,12 +19,12 @@ const Header = () => {
     <header className="min-h-screen">
       <div className="grid lg:grid-cols-2 min-h-screen">
         <div className="relative hidden lg:block">
-          <div className="absolute inset-0 bg-blue-800">
+          <div className="absolute inset-0 bg-blue-950">
             <Image
-              src="/header-image.jpg"
+              src="/placeholder.svg"
               alt="Professional workspace"
               fill
-              className="object-cover opacity-80"
+              className="object-cover opacity-80 mix-blend-overlay"
             />
           </div>
         </div>
@@ -37,7 +37,7 @@ const Header = () => {
               className="space-y-6"
             >
               <div className="text-sm font-medium text-indigo-600">
-                FASTEST ASSISTANT MATCHING PLATFORM IN TANZANIA
+                FASTEST ASSISTANT MATCHING
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Find and hire your perfect assistant in minutes
@@ -56,7 +56,11 @@ const Header = () => {
                   className="bg-white/5 border-white/10 text-white placeholder:text-zinc-400"
                 /> */}
                 <Button className="bg-indigo-600 hover:bg-indigo-700 text-white">
+<<<<<<< HEAD
                   <Link href="#cta"> Claim Life Time Deal!</Link>
+=======
+                  <Link href="#cta">Claim Your Life Time Deal!</Link>
+>>>>>>> parent of c09666d (Merge branch 'master' of https://github.com/PikachuUsedSurf/pa-landing)
                 </Button>
               </div>
             </motion.div>

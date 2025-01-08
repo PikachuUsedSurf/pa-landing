@@ -6,12 +6,11 @@ import Header from "./components/Header";
 import HowItWorks from "./components/HowItWorks";
 import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
-import VisitorCounter from "./components/VisitorCounter";
 
 export default function Home() {
   return (
     <motion.main
-      className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-white"
+      className="min-h-screen bg-background"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -21,7 +20,6 @@ export default function Home() {
       <HowItWorks id="how-it-works" />
       <FAQ id="faq" />
       <CTA id="cta" />
-      <VisitorCounter />
     </motion.main>
   );
 }
