@@ -56,11 +56,7 @@ const Header = () => {
                   className="bg-white/5 border-white/10 text-white placeholder:text-zinc-400"
                 /> */}
                 <Button className="bg-indigo-600 hover:bg-indigo-700 text-white">
-<<<<<<< HEAD
                   <Link href="#cta">Claim Your Life Time Deal!</Link>
-=======
-                  <Link href="#cta"> Claim Life Time Deal!</Link>
->>>>>>> a34d291f77874f14b659a984959d4ab0ad7ba64a
                 </Button>
               </div>
             </motion.div>
