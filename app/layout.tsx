@@ -6,7 +6,7 @@ import { ThemeProvider } from './components/theme-provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AssistantHire - Find Your Perfect Personal Assistant',
+  title: 'PA-TZ - Find Your Perfect Personal Assistant',
   description: 'Connect with top-tier personal assistants for your business and personal needs.',
 }
 
