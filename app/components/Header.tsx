@@ -57,10 +57,14 @@ const Header = () => {
                 /> */}
                 <Button className="bg-indigo-600 hover:bg-indigo-700 text-white">
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <Link href="#cta"> Claim Life Time Deal!</Link>
 =======
                   <Link href="#cta">Claim Your Life Time Deal!</Link>
 >>>>>>> parent of c09666d (Merge branch 'master' of https://github.com/PikachuUsedSurf/pa-landing)
+=======
+                  <Link href="#cta">Claim Your Life Time Deal!</Link>
+>>>>>>> parent of f285ff4 (added database, added visitor counter, can now store CTA form questions into database, added pictures, added black and white mode, added home button in navbar)
                 </Button>
               </div>
             </motion.div>
