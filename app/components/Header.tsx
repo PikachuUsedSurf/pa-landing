@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import Link from 'next/link'
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -20,10 +21,10 @@ const Header = () => {
         <div className="relative hidden lg:block">
           <div className="absolute inset-0 bg-blue-950">
             <Image
-              src="/placeholder.svg"
+              src="/header-image.jpg"
               alt="Professional workspace"
               fill
-              className="object-cover opacity-80 mix-blend-overlay"
+              className="object-cover opacity-80 "
             />
           </div>
         </div>
@@ -35,23 +36,23 @@ const Header = () => {
               transition={{ duration: 0.8 }}
               className="space-y-6"
             >
-              <div className="text-sm font-medium text-indigo-600">FASTEST ASSISTANT MATCHING</div>
+              <div className="text-sm font-medium text-indigo-600">FASTEST ASSISTANT MATCHING IN TANZANIA</div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Find and hire your perfect assistant in minutes
               </h1>
               <p className="text-lg text-zinc-400 max-w-lg">
-                Connect with pre-vetted personal assistants who match your needs perfectly. Our AI-powered platform makes finding the right assistant easier than ever.
+                Connect with pre-vetted personal assistants who match your needs perfectly. Our platform makes finding the right assistant easier than ever.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 max-w-md">
-                <Input
+                {/* <Input
                   type="email"
                   placeholder="Enter email to get started"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="bg-white/5 border-white/10 text-white placeholder:text-zinc-400"
-                />
+                /> */}
                 <Button className="bg-indigo-600 hover:bg-indigo-700 text-white">
-                  Start your 7 days trial
+                  <Link href="#cta">Claim Your Life Time Deal!</Link>
                 </Button>
               </div>
             </motion.div>
