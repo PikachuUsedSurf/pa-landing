@@ -107,14 +107,6 @@ const CTA = ({ id }: { id?: string }) => {
           Join our waitlist to be notified when we launch! <br /> Be the first
           few to claim your lifetime deal below!
         </motion.p>
-        <motion.p
-          className="text-xl mb-8 text-zinc-400"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          Claim your lifetime deal below
-        </motion.p>
         <Drawer open={isOpen} onOpenChange={setIsOpen}>
           <DrawerTrigger asChild>
             <Button
@@ -122,15 +114,11 @@ const CTA = ({ id }: { id?: string }) => {
               size="lg"
               className="bg-white dark:bg-zinc-950 hover:bg-zinc-100 dark:hover:bg-zinc-900 relative"
             >
-<<<<<<< HEAD
-              Join Waitlist & Claim Lifetime Deal!
-=======
               <span className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg" />
               <span className="absolute inset-0.5 bg-white dark:bg-zinc-950 rounded-[7px]" />
               <span className="relative">
                 Join Waitlist & Claim Lifetime Deal!
               </span>
->>>>>>> a34d291f77874f14b659a984959d4ab0ad7ba64a
             </Button>
           </DrawerTrigger>
           <DrawerContent className="bg-white dark:bg-zinc-950 border-zinc-200 dark:border-zinc-800">
@@ -301,11 +289,7 @@ const CTA = ({ id }: { id?: string }) => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-<<<<<<< HEAD
-                      className="w-96 bg-zinc-900 border-zinc-800"
-=======
                       className="w-full max-w-md mx-auto bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800"
->>>>>>> a34d291f77874f14b659a984959d4ab0ad7ba64a
                     />
                   </motion.div>
                 )}
