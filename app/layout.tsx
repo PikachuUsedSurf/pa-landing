@@ -19,7 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <body className={`${inter.className} bg-black`}>
+=======
+      <body className={` bg-black`}>
+>>>>>>> parent of f285ff4 (added database, added visitor counter, can now store CTA form questions into database, added pictures, added black and white mode, added home button in navbar)
 =======
       <body className={` bg-black`}>
 >>>>>>> parent of f285ff4 (added database, added visitor counter, can now store CTA form questions into database, added pictures, added black and white mode, added home button in navbar)

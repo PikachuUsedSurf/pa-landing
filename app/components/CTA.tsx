@@ -61,6 +61,7 @@ const CTA = ({ id }: { id?: string }) => {
             >
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               <span className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg" />
               <span className="absolute inset-0.5 bg-white dark:bg-zinc-950 rounded-[7px]" />
               <span className="relative">
@@ -69,6 +70,9 @@ const CTA = ({ id }: { id?: string }) => {
 =======
               Join Waitlist & Claim Lifetime Deal!
 >>>>>>> parent of c09666d (Merge branch 'master' of https://github.com/PikachuUsedSurf/pa-landing)
+=======
+              Join Waitlist & Claim Lifetime Deal!
+>>>>>>> parent of f285ff4 (added database, added visitor counter, can now store CTA form questions into database, added pictures, added black and white mode, added home button in navbar)
 =======
               Join Waitlist & Claim Lifetime Deal!
 >>>>>>> parent of f285ff4 (added database, added visitor counter, can now store CTA form questions into database, added pictures, added black and white mode, added home button in navbar)
@@ -234,10 +238,14 @@ const CTA = ({ id }: { id?: string }) => {
                       required
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       className="w-full max-w-md mx-auto bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800"
 =======
                       className="w-96 bg-zinc-900 border-zinc-800"
 >>>>>>> parent of c09666d (Merge branch 'master' of https://github.com/PikachuUsedSurf/pa-landing)
+=======
+                      className="w-96 bg-zinc-900 border-zinc-800"
+>>>>>>> parent of f285ff4 (added database, added visitor counter, can now store CTA form questions into database, added pictures, added black and white mode, added home button in navbar)
 =======
                       className="w-96 bg-zinc-900 border-zinc-800"
 >>>>>>> parent of f285ff4 (added database, added visitor counter, can now store CTA form questions into database, added pictures, added black and white mode, added home button in navbar)
@@ -249,9 +257,15 @@ const CTA = ({ id }: { id?: string }) => {
                 <Button
                   type="submit"
 <<<<<<< HEAD
+<<<<<<< HEAD
                   className="w-full bg-zinc-900 hover:bg-zinc-800"
                 >
                   {step < 3 ? "Next" : "Submit"}
+=======
+                  className="w-full bg-white hover:bg-zinc-800"
+                >
+                  {step < 4 ? "Next" : "Submit"}
+>>>>>>> parent of f285ff4 (added database, added visitor counter, can now store CTA form questions into database, added pictures, added black and white mode, added home button in navbar)
 =======
                   className="w-full bg-white hover:bg-zinc-800"
                 >
