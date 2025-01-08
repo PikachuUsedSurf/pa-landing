@@ -1,61 +1,45 @@
-"use client";
+'use client'
 
-import { motion } from "framer-motion";
-import {
-  MessageCircle,
-  Clock,
-  CreditCard,
-  Users,
-  Shield,
-  HeartHandshake,
-} from "lucide-react";
+import { motion } from 'framer-motion'
+import { MessageCircle, Clock, CreditCard, Users, Shield, HeartHandshake } from 'lucide-react'
 
 const faqs = [
   {
     icon: Clock,
     question: "How long does the matching process take?",
-    answer:
-      "Our AI-powered matching system typically finds suitable candidates within 24-48 hours of your requirements submission.",
+    answer: "Our AI-powered matching system typically finds suitable candidates within 24-48 hours of your requirements submission."
   },
   {
     icon: CreditCard,
     question: "What are the payment terms?",
-    answer:
-      "We offer flexible payment options with secure transactions. Payments are processed only after you're satisfied with the match.",
+    answer: "We offer flexible payment options with secure transactions. Payments are processed only after you're satisfied with the match."
   },
   {
     icon: Users,
     question: "Can I hire multiple assistants?",
-    answer:
-      "Yes, you can hire multiple assistants for different roles or projects through our platform.",
+    answer: "Yes, you can hire multiple assistants for different roles or projects through our platform."
   },
   {
     icon: Shield,
     question: "How do you verify assistants?",
-    answer:
-      "We conduct thorough background checks, skill assessments, and reference verification for all assistants.",
+    answer: "We conduct thorough background checks, skill assessments, and reference verification for all assistants."
   },
   {
     icon: MessageCircle,
     question: "How do I communicate with assistants?",
-    answer:
-      "Our platform provides integrated messaging, video calls, and task management tools.",
+    answer: "Our platform provides integrated messaging, video calls, and task management tools."
   },
   {
     icon: HeartHandshake,
     question: "What if I'm not satisfied?",
-    answer:
-      "We offer a satisfaction guarantee with a free rematch if you're not happy with your initial assistant.",
-  },
-];
+    answer: "We offer a satisfaction guarantee with a free rematch if you're not happy with your initial assistant."
+  }
+]
 
 const FAQ = ({ id }: { id?: string }) => {
   return (
-    <section
-      id={id}
-      className="py-24 items-center bg-gradient-to-b from-indigo-950/50 to-background"
-    >
-      <div className="container mx-auto px-4 ">
+    <section id={id} className="py-24 bg-gradient-to-b from-indigo-950/50 to-background">
+      <div className="container px-4 md:px-6">
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl">
             Frequently Asked Questions
@@ -84,7 +68,8 @@ const FAQ = ({ id }: { id?: string }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default FAQ;
+export default FAQ
+

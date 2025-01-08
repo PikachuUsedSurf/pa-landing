@@ -1,33 +1,30 @@
-"use client";
+'use client'
 
-import { motion } from "framer-motion";
-import Image from "next/image";
+import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const steps = [
   {
     number: "1",
     title: "Create Your Profile",
-    description:
-      "Set up your account and describe your assistant requirements or skills.",
+    description: "Set up your account and describe your assistant requirements or skills."
   },
   {
     number: "2",
     title: "Specify Your Needs",
-    description:
-      "Detail your preferences, schedule, and specific requirements.",
+    description: "Detail your preferences, schedule, and specific requirements."
   },
   {
     number: "3",
     title: "Get Matched",
-    description:
-      "Our AI system matches you with the most compatible candidates.",
+    description: "Our AI system matches you with the most compatible candidates."
   },
   {
     number: "4",
     title: "Start Working",
-    description: "Begin your collaboration with full platform support.",
-  },
-];
+    description: "Begin your collaboration with full platform support."
+  }
+]
 
 const HowItWorks = ({ id }: { id?: string }) => {
   return (
@@ -54,11 +51,10 @@ const HowItWorks = ({ id }: { id?: string }) => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl">
-                How Personal Assistance works?
+                How AssistantHire works?
               </h2>
               <p className="text-zinc-400 md:text-xl/relaxed">
-                Our streamlined process makes finding the perfect assistant
-                simple and efficient.
+                Our streamlined process makes finding the perfect assistant simple and efficient.
               </p>
             </div>
             <div className="grid gap-6">
@@ -85,7 +81,8 @@ const HowItWorks = ({ id }: { id?: string }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HowItWorks;
+export default HowItWorks
+
