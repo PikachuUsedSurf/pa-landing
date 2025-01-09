@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <footer className="bg-white dark:bg-zinc-950 border-t border-zinc-200 dark:border-zinc-800 py-8">
       <div className="container mx-auto px-4">
         <p className="text-center text-zinc-600 dark:text-zinc-400">
-          &copy; {currentYear} AssistantHire. All rights reserved.
+          &copy; {currentYear} Personal Assistant. All rights reserved.
         </p>
       </div>
     </footer>
